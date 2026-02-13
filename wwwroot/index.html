@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8mb-4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон - Вход в систему</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>Автосалон</h1>
+                <p>Система управления</p>
+            </div>
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Имя пользователя" autocomplete="off" required>
+                <input type="password" id="password" placeholder="Пароль" autocomplete="off" required>
+                <button type="submit">Войти</button>
+            </form>
+            <div class="login-footer">
+                <button type="button" onclick="showRegisterForm()" class="btn-register">Регистрация</button>
+            </div>
+            <div id="loginError" class="error-message"></div>
+        </div>
+    </div>
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRegisterModal()">&times;</span>
+            <div id="registerModalBody"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

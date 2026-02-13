@@ -1,0 +1,6 @@
+@Kursach_HostAddress = http://localhost:5137
+
+GET {{Kursach_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
